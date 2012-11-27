@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: 建立新的 Care Home
+            reorder: 对 Care Homes 重新排序
+            reorder_done: 对 Care Homes 的重新排序结束
+          records:
+            title: Care Homes
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Care Homes yet. Click "Add New Care Home" to add your first care home.
+            no_items_yet: 目前没有 Care Homes . 点击 "Add New Care Home" 创建一个care home.
+          care_home:
+            view_live_html: 查看 care home 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 care home
+            delete: 永久删除 care home
+      care_homes:
+        show:
+          other: 其他 Care Homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

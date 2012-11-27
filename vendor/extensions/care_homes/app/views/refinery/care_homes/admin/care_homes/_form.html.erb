@@ -1,0 +1,35 @@
+<%= form_for [refinery, :care_homes_admin, @care_home] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @care_home,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :address -%>
+    <%= f.text_field :address  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :town -%>
+    <%= f.text_field :town  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :postcode -%>
+    <%= f.text_field :postcode  -%>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.care_homes.admin.care_homes.care_home'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @care_home.name) %>
+<% end -%>

@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: Lag en ny Care Home
+            reorder: Endre rekkefølgen på Care Homes
+            reorder_done: Ferdig å endre rekkefølgen Care Homes
+          records:
+            title: Care Homes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Care Homes enda. Klikk på "Lag en ny Care Home" for å legge til din første care home.
+          care_home:
+            view_live_html: Vis hvordan denne care home ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne care home
+            delete: Fjern denne care home permanent
+      care_homes:
+        show:
+          other: Andre Care Homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: Pridať Care Home
+            reorder: Preusporiadať Care Homes
+            reorder_done: Koniec radenia Care Homes
+          records:
+            title: Care Homes
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Care Homes. Kliknite na "Pridať Care Home" pre pridanie prvého care home.
+          care_home:
+            view_live_html: Zobraziť náhľad care home<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť care home
+            delete: Zmazať care home
+      care_homes:
+        show:
+          other: Daľšie Care Homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

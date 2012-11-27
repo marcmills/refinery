@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Care Home
+            reorder: Réordonner les Care Homes
+            reorder_done: Fin de réordonnancement des Care Homes
+          records:
+            title: Care Homes
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Care Home. Cliquer sur "Créer un(e) nouve(au/l/lle) Care Home" pour créer votre premi(er/ère) care home.'
+          care_home:
+            view_live_html: Voir ce(t/tte) care home <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) care home
+            delete: Supprimer définitivement ce(t/tte) care home
+      care_homes:
+        show:
+          other: Autres Care Homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

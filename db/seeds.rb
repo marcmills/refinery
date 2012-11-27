@@ -8,3 +8,6 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS Care Homes extension
+Refinery::CareHomes::Engine.load_seed

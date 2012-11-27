@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: Maak een nieuwe Care Home
+            reorder: Wijzig de volgorde van de Care Homes
+            reorder_done: Klaar met het wijzingen van de volgorde van de Care Homes
+          records:
+            title: Care Homes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Care Homes. Druk op 'Maak een nieuwe Care Home' om de eerste aan te maken.
+          care_home:
+            view_live_html: Bekijk deze care home op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze care home
+            delete: Verwijder deze care home voor eeuwig
+      care_homes:
+        show:
+          other: Andere Care Homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

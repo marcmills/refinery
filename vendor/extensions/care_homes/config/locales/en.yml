@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: Add New Care Home
+            reorder: Reorder Care Homes
+            reorder_done: Done Reordering Care Homes
+          records:
+            title: Care Homes
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Care Homes yet. Click "Add New Care Home" to add your first care home.
+          care_home:
+            view_live_html: View this care home live <br/><em>(opens in a new window)</em>
+            edit: Edit this care home
+            delete: Remove this care home forever
+      care_homes:
+        show:
+          other: Other Care Homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

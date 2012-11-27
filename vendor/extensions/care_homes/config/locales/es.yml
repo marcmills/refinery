@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      care_homes:
+        title: Care Homes
+#        article: masculino/femenino
+    care_homes:
+      admin:
+        care_homes:
+          actions:
+            create_new: Crear nuevo care home
+            reorder: Reordenar care homes
+            reorder_done: Reordenación de care homes completada
+          records:
+            title: Care Homes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay care homes todavía. Pulsa en "Crear nuevo Care Home" para crear tu primer care home.
+          care_home:
+            view_live_html: Ver este care home como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este care home
+            delete: Borrar este care home para siempre
+      care_homes:
+        show:
+          other: Otros care homes
+  activerecord:
+    attributes:
+      'refinery/care_homes/care_home':
+        name: Name
+        address: Address
+        town: Town
+        postcode: Postcode

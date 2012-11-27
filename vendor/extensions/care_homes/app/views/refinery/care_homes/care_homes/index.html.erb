@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="care_homes">
+    <% @care_homes.each do |care_home| %>
+      <li>
+        <%= link_to care_home.name, refinery.care_homes_care_home_path(care_home) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

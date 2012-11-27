@@ -3,6 +3,9 @@
     <% @care_homes.each do |care_home| %>
       <li>
         <%= link_to care_home.name, refinery.care_homes_care_home_path(care_home) %>
+        <%= care_home.address %>
+        <%= care_home.town %>
+        <%= care_home.postcode %>
       </li>
     <% end %>
   </ul>

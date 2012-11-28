@@ -98,3 +98,6 @@ vendor/extensions/**/spec/dummy
 config/database.yml
 # ENV variables that should not be committed to source control
 config/envs.rb
+
+# Engine specific migrations
+db/migrate/*.refinery_care_homes*

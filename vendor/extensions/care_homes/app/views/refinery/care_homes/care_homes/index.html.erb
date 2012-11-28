@@ -1,4 +1,8 @@
 <% content_for :body do %>
+  <%= form_tag("/care_homes/care_home_search") do %>
+    <%= text_field_tag 'postcode' %>
+    <%= submit_tag 'Search' %>
+  <% end %>
   <ul id="care_homes">
     <% @care_homes.each do |care_home| %>
       <li>

@@ -9,6 +9,11 @@ module Refinery
       
       geocoded_by :postcode
       after_validation :geocode
+      
+      def self.near_postcode(postcode)
+        return Array.new if postcode.blank?
+        CareHome.near(postcode, 1000).limit(3)
+      end
     end
   end
 end

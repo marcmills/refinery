@@ -2,6 +2,7 @@ PATH
   remote: vendor/extensions
   specs:
     refinerycms-care_homes (1.0)
+      geocoder
       refinerycms-core (~> 2.0.9)
 
 GEM
@@ -59,6 +60,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     friendly_id (4.0.9)
+    geocoder (1.1.5)
     globalize3 (0.2.0)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)

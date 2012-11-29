@@ -1,5 +1,5 @@
 <% content_for :body do %>
-  <%= form_tag("/care_homes/care_home_search") do %>
+  <%= form_tag(refinery.care_homes_care_home_search_path) do %>
     <%= text_field_tag 'postcode' %>
     <%= submit_tag 'Search' %>
   <% end %>
